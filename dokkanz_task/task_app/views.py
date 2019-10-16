@@ -8,6 +8,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import *
 from .serializers import *
+# from rest_framework_swagger.views import get_swagger_view
+#
+# schema_view = get_swagger_view(title='dokkanz_task')
 
 class ProductView(APIView):
 

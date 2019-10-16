@@ -1,5 +1,5 @@
 from django.urls import path
-
+from django.conf.urls import include
 from . views import *
 from . import views
 
@@ -16,4 +16,8 @@ urlpatterns = [
     path("Category/", CategoryView.as_view()),
     path('Category/<cat_id>', CategoryView.as_view()),
     path('Category/show/all', ShowCategory.as_view()),
+
+    # path("swagger", schema_view)
+    # path('', include('swagger_ui.urls')),
+
 ]
